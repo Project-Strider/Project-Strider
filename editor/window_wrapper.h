@@ -46,6 +46,7 @@ class WindowWrapper : public MarginContainer {
 	Control *wrapped_control = nullptr;
 	MarginContainer *margins = nullptr;
 	Window *window = nullptr;
+	ObjectID window_id;
 
 	Panel *window_background = nullptr;
 
@@ -86,6 +87,7 @@ public:
 	void grab_window_focus();
 
 	WindowWrapper();
+	~WindowWrapper();
 };
 
 class ScreenSelect : public Button {
